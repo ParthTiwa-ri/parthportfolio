@@ -53,7 +53,7 @@ export default function Hero() {
             </motion.div>
             <motion.p
               className="text-center opacity-75 md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl"
-              variants={slideUp({ delay: 0.5 })}
+              variants={slideUp({ delay: 0.5, opacityGiven: 0.7 })}
             >
               I build things for the web using Next.js, Prisma, and Node.js.
             </motion.p>
