@@ -183,3 +183,8 @@ html {
 
   transform: translateY(50%); /* Move the element down by half its height */
 }
+
+.safari-z-fix {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}

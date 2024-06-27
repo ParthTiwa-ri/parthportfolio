@@ -26,7 +26,7 @@ export default function LampGlow() {
             className="absolute  top-0 left-1/2 -translate-x-1/2 w-[90%] md:w-3/4 xl:w-1/2  h-full"
             particleColor="#FFFFFF"
           />
-          <div className=" absolute opacity-[99.9%] left-1/2 -translate-x-1/2   bg-[#111113] blur-2xl md:blur-3xl  top-24 md:top-44  h-48 md:h-[250px] pointer-events-none   w-[800px] "></div>
+          <div className=" absolute  opacity-[99.9%] left-1/2 -translate-x-1/2   bg-[#111113] blur-2xl md:blur-3xl  top-24 md:top-44  h-48 md:h-[250px] pointer-events-none   w-[800px] "></div>
         </div>
       </div>
     </>
