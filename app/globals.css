@@ -2,32 +2,169 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background: 0 0% 100%;
+
+    --foreground: 240 10% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 10% 3.9%;
+    --color-accent-torch: theme(colors.blue.100/0.15);
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+  }
+  ::selection {
+    @apply dark:bg-white/70 bg-slate-400/30 text-accent;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer base {
+  * {
+    @apply border-border !scroll-smooth;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  button {
+    @apply active:outline-none;
+  }
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .heading,
+  .h1 {
+    @apply font-bold text-4xl md:text-5xl text-center;
   }
+
+  .heading-secondary,
+  .h2 {
+    @apply text-3xl sm:text-4xl capitalize font-medium mb-8 sm:mb-12;
+  }
+  .heading-tertiary,
+  .h3 {
+    @apply text-xl sm:text-2xl tracking-wide capitalize font-medium;
+  }
+
+  .black-gradient {
+    background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
+  }
+}
+
+.galaxy-background {
+  background-image: url("/images/bgStars.png");
+  background-position: 50%;
+  background-size: 1090px;
+  position: absolute;
+
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  overflow: hidden;
+}
+
+.wand-shaft {
+  background-image: linear-gradient(90deg, #0c0c0c, #1d1a1f);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  display: flex;
+}
+
+.wand-streak {
+  height: 4px;
+  opacity: 0.85;
+  filter: blur(8px);
+  background-image: linear-gradient(91deg, #000, #fff 31%);
+  margin-bottom: 6px;
+  margin-right: -16px;
+}
+.wand-tip {
+  background-image: linear-gradient(
+    #cfdcf1 1%,
+    #fff 13%,
+    #fff 59%,
+    #dfe6f1 92%,
+    #d4ddec 96%
+  );
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.tile-icon {
+  width: 72px;
+  height: 72px;
+  background-image: linear-gradient(#343236, #38343f);
+  border-radius: 12px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+  box-shadow: 0 20px 15px rgba(0, 0, 0, 0.2), inset 0 2px 2px #525154;
+}
+@media (max-width: 768px) {
+  .tile-icon {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+html {
+  --line-color: #e5e7eb;
 }
