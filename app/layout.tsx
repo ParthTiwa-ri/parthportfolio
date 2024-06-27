@@ -29,7 +29,7 @@ export default function RootLayout({
           {children}
           <Toaster position="top-right" />
 
-          <Cursor className="" />
+          {/* <Cursor className="" /> */}
         </ThemeProvider>
       </body>
     </html>
