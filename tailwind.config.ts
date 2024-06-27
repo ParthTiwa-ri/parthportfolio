@@ -38,6 +38,8 @@ const config = {
       },
       colors: {
         onBg: "#37343E",
+        bg: "#161618",
+
         purple: "#CBACF9",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

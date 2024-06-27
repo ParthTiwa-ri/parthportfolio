@@ -12,12 +12,14 @@ const ProjectWorkedOn = dynamic(
 );
 const Skills = dynamic(() => import("@/components/sections/Skills"));
 import Experience from "@/components/sections/experience";
+import Gap from "@/components/Gap";
 
 export default function Home() {
   return (
     <main className="relative  flex justify-center  flex-col overflow-hidden items-center ">
       <div className="galaxy-background" />
       <Hero />
+      <Gap />
       <div className="xl:max-w-[1200px] md:max-w-xl max-w-[350px] ">
         <LampGlow />
         <AboutMe />
