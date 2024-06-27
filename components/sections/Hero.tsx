@@ -5,7 +5,7 @@ import { TextGenerateEffect } from "../ui/TextGenerateEffect";
 
 export default function Hero() {
   return (
-    <div className="bg-gradient-to-b from-[#000319] via-[#2C0368] to-[#000319] min-h-screen relative -z-10 blurred-bottom-border  w-full">
+    <div className="bg-gradient-to-b from-[#000319] via-[#2C0368]  to-[#000319] min-h-screen relative -z-10 blurred-bottom-border  w-full">
       <div className="xl:max-w-[1200px] md:max-w-xl mx-auto max-w-[350px] pt-36   ">
         <div className=" absolute inset-0">
           <SparklesCore
@@ -35,14 +35,20 @@ export default function Hero() {
               </p>
             </div> */}
             <TextGenerateEffect
-              words="Transforming Concepts into Seamless User Experiences"
+              // words="Transforming Concepts into Seamless User Experiences"
+              words="  Hi! I'm Parth Tiwari, a Next.js Developer based in India."
               className="text-center text-[40px] md:text-5xl lg:text-6xl"
             />
-
             <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
               Hi! I&apos;m Parth Tiwari, a Next.js Developer based in India.
-            </p>
-            <a href="#about"></a>
+            </p>{" "}
+            <a href="#about">
+              <MagicButton
+                title="Show my work"
+                icon={<FaLocationArrow />}
+                position="right"
+              />
+            </a>
           </div>
         </div>
       </div>

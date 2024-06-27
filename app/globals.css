@@ -176,7 +176,8 @@ html {
   left: 0;
   width: 100%;
   height: 70px; /* Adjust the height as needed */
-  background: rgb(18, 18, 18); /* Adjust color as needed */
+  /* background: rgb(18, 18, 18);  */
+  @apply bg-gradient-to-b from-[#070522] to-[#131219];
   filter: blur(20px);
 
   transform: translateY(50%); /* Move the element down by half its height */
