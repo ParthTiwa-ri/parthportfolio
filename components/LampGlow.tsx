@@ -16,7 +16,6 @@ export default function LampGlow() {
             className=" scale-[1.9] xl:scale-100 md:scale-[1.65] md:mt-10 relative xl:-mt-6 mt-4 "
             width={980}
             height={980}
-            classname="relative -z-10"
           ></img>
           <SparklesCore
             background="transparent"
