@@ -3,14 +3,18 @@ import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
 
-export default function SocialContactContainer({
+export default function SocialContactCOntainer({
   children,
+  link,
 }: {
   children: React.ReactNode;
+  link: string;
 }) {
   return (
     <motion.li initial={{ opacity: 0.6 }} whileHover={{ opacity: 1 }}>
-      <Link href="https://www.linkedin.com/in/parthtiwariii/">{children}</Link>
+      <Link target="_blank" href={link}>
+        {children}
+      </Link>
     </motion.li>
   );
 }

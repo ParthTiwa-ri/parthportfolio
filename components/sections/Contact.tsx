@@ -12,7 +12,7 @@ export default function Contact() {
     <div className=" xl:min-h-[100vh]  min-h-[130vh] flex items-center">
       {/* // xl:py-36 pt-36 pb-12 */}
       <section id="contact" className="  relative z-10">
-        <p className="h1 pb-16">{contactMe.heading}</p>
+        <p className="h1 pb-20">{contactMe.heading}</p>
         <div className="flex xl:flex-row xl:gap-0 gap-20 flex-col w-full ">
           <div className="basis-1/2 flex items-center flex-col justify-center">
             {contactMe.description.map((item, index) => (
@@ -23,9 +23,9 @@ export default function Contact() {
             <div className="flex w-[80%] flex-col md:flex-row md:gap-0 gap-6 justify-self-start self-start  mt-8">
               <div className="basis-1/2  flex  items-center">
                 <ul className="flex gap-4">
-                  {contactMe.socials.map((item, index) => (
-                    <SocialContactContainer key={item.id}>
-                      {item.icon}
+                  {contactMe.socials.map(({ id, icon, link }, index) => (
+                    <SocialContactContainer key={id} link={link}>
+                      {icon}
                     </SocialContactContainer>
                   ))}
                 </ul>

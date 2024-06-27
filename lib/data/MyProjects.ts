@@ -1,49 +1,69 @@
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System ",
-    githubLink: "https://github.com",
+    title: "Country Detail ",
+    githubLink: "https://github.com/ParthTiwa-ri/country-detail",
 
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
+    img: "/images/country.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    skills: ["ReactJs ", "NextJ"],
+    skills: ["ReactJs ", "ContextAPI", "React Query"],
 
-    link: "/ui.earth.com",
+    link: "https://country-detail.vercel.app/",
   },
   {
     id: 2,
-    title: "Yoom ",
-    githubLink: "https://github.com",
+    title: "E-commerce ",
+    githubLink: "https://github.com/ParthTiwa-ri/ecommerce",
 
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
+    img: "/images/ecom.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    skills: ["ReactJs ", "NextJ"],
+    skills: ["ReactJs ", "Redux"],
 
-    link: "/ui.yoom.com",
+    link: "https://e-commerce-chi-blond.vercel.app/",
   },
   {
     id: 3,
-    title: "AI Image SaaS",
-    githubLink: "https://github.com",
+    title: "EcoFootPrint",
+    githubLink: "https://github.com/ParthTiwa-ri/ecofootprintfrontend",
 
     des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
+    img: "/images/eco.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    skills: ["ReactJs ", "NextJ"],
+    skills: ["ReactJs ", "MongoDB", "ExpressJs"],
 
-    link: "https://ui.aiimg.com",
+    link: "https://ecofootprint.vercel.app/",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone ",
-    githubLink: "https://github.com",
+    title: "Habitfy",
+    githubLink: "https://github.com/ParthTiwa-ri/habit-gamify",
     des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
+    img: "/images/habit.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    skills: ["ReactJs ", "NextJ"],
+    skills: ["ReactJs ", "MongoDB", "ExpressJs"],
 
-    link: "/ui.apple.com",
+    link: "https://habit-gamify.vercel.app/",
+  },
+  {
+    id: 5,
+    title: "IP Address Tracker",
+    githubLink: "https://github.com/ParthTiwa-ri/ip-adress",
+
+    img: "/images/ip.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    skills: ["ReactJs ", " API"],
+
+    link: "https://ip-tracker-mocha.vercel.app/",
+  },
+  {
+    id: 6,
+    title: "Atomic Blog",
+    githubLink: "https://github.com/ParthTiwa-ri/atomic-blog",
+    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    img: "/images/blog.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    skills: ["ReactJs ", "State Management"],
+
+    link: "https://atomblog.vercel.app/",
   },
 ];

@@ -13,21 +13,21 @@ export default function Footer() {
           <small className="opacity-30">Build with</small>
           <small className="flex justify-center opacity-50 items-center gap-1">
             Next.js
-            <Link href="https://nextjs.org">
+            <Link target="_blank" href="https://nextjs.org">
               <IoOpenOutline />
             </Link>
           </small>
           <small className="opacity-30">and </small>{" "}
           <small className="flex justify-center items-center opacity-50  gap-1">
             TailwindCSS
-            <Link href="https://tailwindcss.com">
+            <Link target="_blank" href="https://tailwindcss.com">
               <IoOpenOutline />
             </Link>
           </small>
           <small className="opacity-30">, deployed on</small>{" "}
           <small className="flex justify-center opacity-50 items-center gap-1">
             Vercel
-            <Link href="https://vercel.com">
+            <Link target="_blank" href="https://vercel.com">
               <IoOpenOutline />
             </Link>
           </small>

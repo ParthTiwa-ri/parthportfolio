@@ -12,9 +12,9 @@ import Wrapper from "../Wrapper";
 
 export default function Experience() {
   return (
-    <Wrapper>
+    <Wrapper classnames="xl:my-20">
       <section id="experience" className="">
-        <p className="h1 pb-16">My Experience</p>
+        <p className="h1 pb-20">My Experience</p>
         <VerticalTimeline lineColor="" animate={false}>
           {experiencesData.map((item, index) => (
             <React.Fragment key={index}>

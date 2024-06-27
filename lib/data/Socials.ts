@@ -4,7 +4,7 @@ export const socialsDetail = [
   {
     id: 1,
     title: "Twitter",
-    link: "",
+    link: "https://x.com/ParthTi75000081",
     icon: React.createElement(Icon, {
       icon: "ri:twitter-x-fill",
       style: { color: "white" },
@@ -15,7 +15,7 @@ export const socialsDetail = [
   {
     id: 2,
     title: "Github",
-    link: "",
+    link: "https://github.com/ParthTiwa-ri",
     icon: React.createElement(Icon, {
       icon: "akar-icons:github-fill",
       style: { color: "white" },
@@ -26,7 +26,7 @@ export const socialsDetail = [
   {
     id: 3,
     title: "Linkedin",
-    link: "",
+    link: "https://www.linkedin.com/in/parthtiwariii/",
     icon: React.createElement(Icon, {
       icon: "akar-icons:linkedin-v1-fill",
       style: { color: "white" },

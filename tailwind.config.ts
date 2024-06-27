@@ -37,6 +37,7 @@ const config = {
           "linear-gradient(180deg, #b89fff 0%, rgba(139, 100, 255, 1) 100%)",
       },
       colors: {
+        onBg: "#37343E",
         purple: "#CBACF9",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

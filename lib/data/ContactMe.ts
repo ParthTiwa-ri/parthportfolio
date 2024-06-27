@@ -18,7 +18,7 @@ export const contactMe = {
         width: "28",
         height: "28",
       }),
-      link: "",
+      link: "https://github.com/ParthTiwa-ri",
     },
     {
       id: 2,
@@ -38,7 +38,7 @@ export const contactMe = {
         width: "28",
         height: "28",
       }),
-      link: "https://twitter.com/ParthTi256",
+      link: "https://x.com/ParthTi75000081",
     },
   ],
 };
