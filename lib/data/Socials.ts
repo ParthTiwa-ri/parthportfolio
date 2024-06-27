@@ -38,7 +38,7 @@ export const socialsDetail = [
   {
     id: 4,
     title: "Instagram",
-    link: "",
+    link: "https://www.instagram.com/inc.parth/",
     icon: React.createElement(Icon, {
       icon: "akar-icons:instagram-fill",
       style: { color: "white" },
@@ -50,7 +50,7 @@ export const socialsDetail = [
   {
     id: 5,
     title: "Email",
-    link: "",
+    link: "mailto: parthtiwari421@email.com",
     icon: React.createElement(Icon, {
       icon: "eva:email-fill",
       style: { color: "white" },
@@ -62,7 +62,7 @@ export const socialsDetail = [
   {
     id: 6,
     title: "Leetcode",
-    link: "",
+    link: "https://leetcode.com/u/ParthTiwari01/",
     icon: React.createElement(Icon, {
       icon: "simple-icons:leetcode",
       style: { color: "white" },
@@ -73,7 +73,7 @@ export const socialsDetail = [
   {
     id: 7,
     title: "Codeforces",
-    link: "",
+    link: "https://codeforces.com/profile/parthtiwari421",
     icon: React.createElement(Icon, {
       icon: "simple-icons:codeforces",
       style: { color: "white" },
@@ -95,7 +95,7 @@ export const socialsDetail = [
   {
     id: 9,
     title: "Whatsapp",
-    link: "",
+    link: "https://wa.me/918859545276",
     icon: React.createElement(Icon, {
       icon: "akar-icons:whatsapp-fill",
       style: { color: "white" },

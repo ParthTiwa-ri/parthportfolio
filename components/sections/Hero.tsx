@@ -1,21 +1,22 @@
 import { FaLocationArrow } from "react-icons/fa6";
 import MagicButton from "../ui/MagicButton";
+import { SparklesCore } from "../ui/Sparkle";
 
 export default function Hero() {
   return (
-    <div className="pb-20 pt-36  relative z-30 ">
-      {/* <div className=" absolute left-0  top-0 w-full h-[450px]">
-          <SparklesCore
-            speed={0.01}
-            id="tsparticlesfullpage"
-            background="transparent"
-            minSize={0.3}
-            maxSize={0.9}
-            particleDensity={100}
-            className="w-full h-full"
-            particleColor="#FFFFFF"
-          />
-        </div> */}
+    <div className="pb-20 pt-36 min-h-screen  relative z-30 ">
+      <div className=" absolute left-0  top-0 w-full h-[450px]">
+        <SparklesCore
+          speed={0.01}
+          id="tsparticlesfullpage"
+          background="transparent"
+          minSize={0.3}
+          maxSize={0.9}
+          particleDensity={100}
+          className="w-full h-full"
+          particleColor="#FFFFFF"
+        />
+      </div>
 
       {/* content */}
       <div className="flex justify-center relative my-20 z-10">

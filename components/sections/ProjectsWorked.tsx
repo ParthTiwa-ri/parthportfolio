@@ -10,7 +10,7 @@ import Image from "next/image";
 
 const ProjectWorkedOn = () => {
   return (
-    <Wrapper>
+    <Wrapper classnames="-mb-16">
       <div className="">
         <h1 className="heading">
           <span className="text-[#36B6FF]">Projects</span> I &apos;ve Worked on{" "}

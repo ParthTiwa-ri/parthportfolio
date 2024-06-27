@@ -18,7 +18,7 @@ export default function Wrapper({
   return (
     <div
       className={cn(
-        "md:min-h-[110vh] min-h-[130vh] flex items-center",
+        "md:min-h-[110vh] py-20 min-h-[130vh] flex items-center",
         classnames
       )}
     >

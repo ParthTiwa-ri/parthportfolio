@@ -66,7 +66,7 @@ export const BentoGridItem = ({
       )}
     >
       {id === 1 && (
-        <div className="xl:flex-col flex-col flex w-full h-full gap-7 ">
+        <div className="xl:flex-col flex-col flex w-full h-full gap-4 xl:gap-7 ">
           <div className="basis-1/2 rounded-3xl md:hidden xl:block relative dark:bg-[#1D1C20] border border-[rgba(255,255,255,0.09)] overflow-hidden">
             <Image
               src={img}
@@ -85,8 +85,10 @@ export const BentoGridItem = ({
           </div>
           <div className="basis-1/2  rounded-3xl p-4  pt-6 xl:pt-4 xl:flex xl:items-center xl:justify-center  dark:bg-[#1D1C20] border border-[rgba(255,255,255,0.09)]">
             <div className="grid place-items-center grid-cols-3 gap-4">
-              {SocialIcons?.map((icon) => (
-                <SocialContainer key={icon.id}>{icon.icon}</SocialContainer>
+              {SocialIcons?.map(({ id, icon, link }) => (
+                <SocialContainer link={link} key={id}>
+                  {icon}
+                </SocialContainer>
               ))}
             </div>
           </div>
