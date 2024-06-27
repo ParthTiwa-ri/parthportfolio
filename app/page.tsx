@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <main className="relative  flex justify-center  flex-col overflow-hidden items-center ">
       <div className="galaxy-background" />
-      <Hero />
+      {/* <Hero /> */}
       <div className="xl:max-w-[1200px] md:max-w-xl max-w-[350px] ">
         <LampGlow />
         <AboutMe />
