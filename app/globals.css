@@ -171,18 +171,18 @@ html {
   --line-color: #e5e7eb;
 }
 
-/* .blurred-bottom-border::after {
+.blurred-bottom-border::after {
   content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 70px; 
+  height: 70px;
   @apply bg-gradient-to-b from-[#070522] to-[#131219];
   filter: blur(20px);
 
-  transform: translateY(50%); 
-} */
+  transform: translateY(50%);
+}
 
 .safari-z-fix {
   -webkit-transform: translate3d(0, 0, 0);
