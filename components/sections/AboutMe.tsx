@@ -25,3 +25,6 @@ const AboutMe = () => {
 export default AboutMe;
 
 // className="bg-[#131325]"
+// bg-gradient-to-b from-[#000319] to-[#2C0368]
+// bg-gradient-to-b from-[#000319] via-[#2C0368] to-[#000319]
+//

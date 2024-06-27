@@ -15,17 +15,15 @@ import Experience from "@/components/sections/experience";
 
 export default function Home() {
   return (
-    <main className="relative bg-[#161618] flex justify-center  flex-col overflow-hidden items-center md:px-10 px-5">
+    <main className="relative  flex justify-center  flex-col overflow-hidden items-center ">
       <div className="galaxy-background" />
-
+      <Hero />
       <div className="xl:max-w-[1200px] md:max-w-xl max-w-[350px] ">
-        <Hero />
         <LampGlow />
         <AboutMe />
         <Skills />
         <Experience />
         <ProjectWorkedOn />
-
         <MyProjects />
         <Contact />
         <Footer />
@@ -33,3 +31,4 @@ export default function Home() {
     </main>
   );
 }
+// bg-[#161618]
