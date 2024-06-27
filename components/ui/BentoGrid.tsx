@@ -109,7 +109,7 @@ export const BentoGridItem = ({
           <p className="leading-[26px] font-silka md:tracking-[0.5px]  text-[#F8F0F2] text-[15px] ">
             I&apos; m{" "}
             <span className="text-xl font-mongo text-[#34B8FF]  font-normal !text-[24px] md:!text-[30px]  ; ">
-              Part
+              Parth
             </span>
             , a full-stack developer with a passion for frontend and
             problem-solving. Based in India, I specialize in NextJs, React,
