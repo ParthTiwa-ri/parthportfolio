@@ -36,8 +36,8 @@ export default function ProjectCards({
             <Image
               src={img}
               alt="title"
-              width={300}
-              height={200}
+              width={200}
+              height={100}
               className="w-full h-full object-cover"
             />
           </Link>

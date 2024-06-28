@@ -23,8 +23,8 @@ export default function Hero() {
             background="transparent"
             minSize={0.3}
             maxSize={0.6}
-            particleDensity={10}
-            className="w-full h-full"
+            particleDensity={20}
+            className="w-full  h-full"
             particleColor="#FFFFFF"
           />
         </div>

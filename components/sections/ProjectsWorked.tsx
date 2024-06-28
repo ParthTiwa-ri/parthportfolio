@@ -34,7 +34,7 @@ const ProjectWorkedOn = () => {
                     <img src="/images/bg.png" alt="bgimg" />
                   </div> */}
                   <Image
-                    width={500}
+                    width={300}
                     height={200}
                     src={item.img}
                     alt="cover"

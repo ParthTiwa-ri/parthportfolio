@@ -73,9 +73,9 @@ export const BentoGridItem = ({
             <Image
               src={img}
               alt="HeroImage"
-              width={280}
-              height={280}
-              className=" absolute hidden md:block  rounded-3xl inset-0 md:object-cover md:object-center object-top"
+              width={180}
+              height={180}
+              className=" absolute w-full   rounded-3xl inset-0 md:object-cover md:object-center object-top"
             />
             {/* <Image
               src="/images/parthsm.jpeg"
