@@ -9,6 +9,8 @@ import { slideUp } from "@/lib/animation";
 export default function Hero() {
   return (
     <div className="bg-gradient-to-b from-[#000319] via-[#2C0368]  to-[#000319] min-h-screen relative -z-10   w-full">
+      <div className="galaxy-background " />
+
       <div className="xl:max-w-[1200px] md:max-w-xl mx-auto max-w-[350px] pt-36">
         <div className="absolute inset-0">
           <SparklesCore
@@ -17,7 +19,7 @@ export default function Hero() {
             background="transparent"
             minSize={0.3}
             maxSize={0.6}
-            particleDensity={30}
+            particleDensity={20}
             className="w-full h-full"
             particleColor="#FFFFFF"
           />
