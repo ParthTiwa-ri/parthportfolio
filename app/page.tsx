@@ -5,8 +5,8 @@ import AboutMe from "@/components/sections/AboutMe";
 import Contact from "@/components/sections/Contact";
 import Footer from "@/components/sections/Footer";
 import Hero from "@/components/sections/Hero";
+// const Hero = dynamic(() => import("@/components/sections/Hero"));
 import MyProjects from "@/components/sections/MyProjects";
-import RecentProjects from "@/components/sections/ProjectsWorked";
 const ProjectWorkedOn = dynamic(
   () => import("@/components/sections/ProjectsWorked")
 );
