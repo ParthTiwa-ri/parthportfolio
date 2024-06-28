@@ -41,7 +41,7 @@ export default function RootLayout({
           {children}
           <Toaster position="top-right" />
 
-          {/* <Cursor className="" /> */}
+          {/* <Cursor className="hidden xl:block" /> */}
         </ThemeProvider>
       </body>
     </html>

@@ -9,11 +9,12 @@ import { LazyMotion, domAnimation, m } from "framer-motion";
 
 import { slideUp } from "@/lib/animation";
 import dynamic from "next/dynamic";
+import { MdOutlineFileDownload } from "react-icons/md";
 
 export default function Hero() {
   return (
-    <div className="bg-gradient-to-b from-[#000319] via-[#2C0368]  to-[#000319] min-h-screen relative -z-20   w-full">
-      {/* <div className="galaxy-background " /> */}
+    <div className="bg-gradient-to-b from-[#000319] via-[#2C0368]  to-[#000319] min-h-screen relative z-20   w-full">
+      <div className="galaxy-background " />
 
       <div className="xl:max-w-[1200px] md:max-w-xl mx-auto max-w-[350px] pt-36">
         <div className="absolute inset-0">
@@ -64,10 +65,15 @@ export default function Hero() {
               >
                 I build things for the web using Next.js, Prisma, and Node.js.
               </m.p>
-              <m.a href="#about" variants={slideUp({ delay: 0.7 })}>
+              <m.a
+                href="https://drive.google.com/file/d/1KBoqDvIEprN9WlP1pJcd_DHXBCoLSiVS/view?usp=sharing"
+                target="_blank"
+                className="z-30  cursor-pointer"
+                variants={slideUp({ delay: 0.7 })}
+              >
                 <MagicButton
-                  title="Show my work"
-                  icon={<FaLocationArrow />}
+                  title="Download Resume"
+                  icon={<MdOutlineFileDownload size={18} />}
                   position="right"
                 />
               </m.a>

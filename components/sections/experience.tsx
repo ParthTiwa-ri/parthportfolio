@@ -9,6 +9,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import Wrapper from "../Wrapper";
+import { RiArrowRightSFill } from "react-icons/ri";
 
 export default function Experience() {
   return (
@@ -39,10 +40,18 @@ export default function Experience() {
                 }}
               >
                 <h3 className="font-semibold capitalize">{item.title}</h3>
-                <p className="font-normal !mt-0">{item.location}</p>
-                <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
-                  {item.description}
+                <p className="font-normal text-xs opacity-95 !mt-0">
+                  {item.location}
                 </p>
+                <ul className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+                  {item.description.map((desc, index) => (
+                    <li key={index} className="">
+                      <RiArrowRightSFill className="text-2xl inline-block -ml-2 text-white-500" />
+                      {desc}
+                    </li>
+                  ))}
+                  {/* {item.description} */}
+                </ul>
               </VerticalTimelineElement>
             </React.Fragment>
           ))}

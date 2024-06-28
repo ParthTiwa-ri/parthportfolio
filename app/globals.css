@@ -32,8 +32,8 @@
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
     --ring: 240 10% 3.9%;
-    /* --color-accent-torch: theme(colors.blue.500/0.15); */
-    /* --color-accent-torch: rgb(255, 255, 255, 0.1); */
+    --color-accent-torch: theme(colors.white/0.05);
+    /* --color-accent-torch: rgb(255, 255, 255, 0.05); */
 
     --radius: 0.5rem;
   }

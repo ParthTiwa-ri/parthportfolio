@@ -32,7 +32,7 @@ const config = {
       },
       backgroundImage: {
         torch:
-          "radial-gradient(525px at 50% 50%, var(--color-accent-torch), transparent 80%)",
+          "radial-gradient(325px at 50% 50%, var(--color-accent-torch), transparent 80%)",
         "custom-gradient":
           "linear-gradient(180deg, #b89fff 0%, rgba(139, 100, 255, 1) 100%)",
       },

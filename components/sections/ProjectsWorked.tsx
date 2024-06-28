@@ -25,7 +25,7 @@ const ProjectWorkedOn = () => {
                 <Link
                   target="_blank"
                   href={item.link}
-                  className="relative flex items-center justify-center md:w-[500px] w-[300px] md:h-[40vh]  overflow-hidden h-[32vh]  mb-10"
+                  className="relative flex items-center justify-center md:w-[500px] w-[300px] md:h-[320px]  overflow-hidden h-[190px]  mb-10"
                 >
                   <div
                     className="absolute w-full h-full overflow-hidden lg:rounded-3xl"
