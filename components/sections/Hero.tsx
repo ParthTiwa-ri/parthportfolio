@@ -17,7 +17,7 @@ export default function Hero() {
             background="transparent"
             minSize={0.3}
             maxSize={0.6}
-            particleDensity={10}
+            particleDensity={30}
             className="w-full h-full"
             particleColor="#FFFFFF"
           />
