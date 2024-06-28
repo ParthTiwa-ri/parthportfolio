@@ -189,12 +189,15 @@ html {
   transform: translate3d(0, 0, 0);
 }
 
-.z-1 {
+.z-2 {
   z-index: 2;
 }
+.z-3 {
+  z-index: 3;
+}
 
-.z-negative-1 {
-  z-index: 1;
+.z-large {
+  z-index: 10000 !important;
   opacity: 99%;
   --webkit-transform: translate3d(0, 0, 0);
 }
