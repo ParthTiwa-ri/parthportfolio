@@ -17,7 +17,7 @@ import Gap from "@/components/Gap";
 export default function Home() {
   return (
     <main className="relative  flex justify-center  flex-col overflow-hidden items-center ">
-      <div className="galaxy-background z-1" />
+      {/* <div className="galaxy-background" /> */}
       <Hero />
       <Gap />
 

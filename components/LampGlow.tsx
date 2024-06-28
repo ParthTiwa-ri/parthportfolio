@@ -13,7 +13,7 @@ export default function LampGlow() {
           <img
             src="/images/light-glow.png"
             alt="lamp-glow"
-            className=" scale-[1.9]  xl:scale-100 md:scale-[1.65] md:mt-10 relative xl:-mt-6 mt-4 "
+            className=" scale-[1.9] z-negative-2  xl:scale-100 md:scale-[1.65] md:mt-10 relative xl:-mt-6 mt-4 "
             width={980}
             height={980}
           ></img>
@@ -23,7 +23,7 @@ export default function LampGlow() {
             maxSize={0.9}
             speed={0.1}
             particleDensity={800}
-            className="absolute  top-0 left-1/2 -translate-x-1/2 w-[90%] md:w-3/4 xl:w-1/2  h-full"
+            className="absolute  top-0 left-1/2 z-negative-1 -translate-x-1/2 w-[90%] md:w-3/4 xl:w-1/2  h-full"
             particleColor="#FFFFFF"
           />
           <div className=" absolute left-1/2 -translate-x-1/2 z-10  bg-[#111113] blur-2xl md:blur-3xl  top-24 md:top-44  h-48 md:h-[250px]  w-[800px] "></div>
