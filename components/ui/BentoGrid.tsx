@@ -1,4 +1,3 @@
-// "use client";
 import { cn } from "@/utils/cn";
 import Image from "next/image";
 
@@ -8,7 +7,10 @@ import { SocialsDetailType, TechStackDetailType } from "@/lib/types";
 import SocialContainer from "./SocialContainer";
 import TechStackContainer from "./TechStackContainer";
 import GridItemThird from "../GridItemThird";
-import GridItemLast from "../GridItemLast";
+import dynamic from "next/dynamic";
+const GridContainer = dynamic(() => import("./GridContainer"), {
+  ssr: false,
+});
 
 type BentoItemProps = {
   id: number;
@@ -136,7 +138,7 @@ export const BentoGridItem = ({
         </div>
       )}
       {/* //spotify */}
-      {/* {id === 5 && (
+      {id === 5 && (
         <div className="relative">
           <iframe
             style={{ borderRadius: "12px" }}
@@ -149,7 +151,7 @@ export const BentoGridItem = ({
             loading="lazy"
           ></iframe>
         </div>
-      )} */}
+      )}
 
       {id === 6 && (
         // add background animation , remove the p tag
@@ -158,6 +160,7 @@ export const BentoGridItem = ({
         </BackgroundGradientAnimation>
       )}
       {/* {id === 6 && <GridItemLast />} */}
+      {id === 6 && <GridContainer />}
     </div>
   );
 };
