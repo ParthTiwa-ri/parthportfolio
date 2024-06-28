@@ -1,18 +1,13 @@
-import dynamic from "next/dynamic";
-
 import LampGlow from "@/components/LampGlow";
 import AboutMe from "@/components/sections/AboutMe";
 import Contact from "@/components/sections/Contact";
 import Footer from "@/components/sections/Footer";
 import Hero from "@/components/sections/Hero";
-// const Hero = dynamic(() => import("@/components/sections/Hero"));
 import MyProjects from "@/components/sections/MyProjects";
-const ProjectWorkedOn = dynamic(
-  () => import("@/components/sections/ProjectsWorked")
-);
-const Skills = dynamic(() => import("@/components/sections/Skills"));
 import Experience from "@/components/sections/experience";
 import Gap from "@/components/Gap";
+import ProjectWorkedOn from "@/components/sections/ProjectsWorked";
+import Skills from "@/components/sections/Skills";
 
 export default function Home() {
   return (

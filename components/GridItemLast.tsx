@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import MagicButton from "./ui/MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
 import Lottie from "react-lottie";
+import ShowLottie from "./ui/ShowLottie";
 
 export default function GridItemLast() {
   const [copied, setCopied] = useState(false);
@@ -29,6 +30,11 @@ export default function GridItemLast() {
       >
         {/* <img src="/confetti.gif" alt="confetti" /> */}
         <Lottie options={defaultOptions} height={200} width={400} />
+        {/* <ShowLottie
+          path={animationData}
+          auto={copied}
+          className="w-[400px] h-[200px]"
+        /> */}
       </div>
       <div className="flex gap-8 md:gap-0  items items-center justify-center flex-col ">
         <p className="font-semibold pointer-events-none md:text-3xl text-xl  md:max-w-96 text-center">

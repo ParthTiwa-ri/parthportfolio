@@ -1,21 +1,17 @@
 "use client";
 import React from "react";
-import Lottie from "react-lottie";
 import animationData from "../../lib/Lottie/techlottiefinal.json";
 import TechSkillsContainer from "../ui/TechSkillsContainer";
 import { skills } from "@/lib/data/Skills";
 import Wrapper from "../Wrapper";
 
-export default function Skills() {
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
+import dynamic from "next/dynamic";
+// import ShowLottie from "../ui/ShowLottie";
+const ShowLottie = dynamic(() => import("../ui/ShowLottie"), {
+  ssr: false,
+});
 
+export default function Skills() {
   return (
     <Wrapper>
       <div
@@ -53,8 +49,10 @@ export default function Skills() {
               ))}
             </div>
           </div>
-          <div className="basis-1/2 mt-8 md:mt-0">
-            <Lottie options={defaultOptions} width={400} height={400} />
+          <div className="basis-1/2 mt-8 md:mt-6 xl:mt-0">
+            {/* <Lottie options={defaultOptions} width={400} height={400} /> */}
+
+            <ShowLottie path={animationData} />
           </div>
         </div>
       </div>

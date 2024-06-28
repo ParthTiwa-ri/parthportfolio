@@ -1,7 +1,11 @@
 import React from "react";
 import MagicBand from "./MagicBand";
-import Image from "next/image";
-import { SparklesCore } from "./ui/Sparkle";
+
+// import { SparklesCore } from "./ui/Sparkle";
+import dynamic from "next/dynamic";
+const SparklesCore = dynamic(() => import("./ui/Sparkle"), {
+  ssr: false,
+});
 
 export default function LampGlow() {
   return (

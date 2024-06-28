@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import { cn } from "@/utils/cn";
 import Image from "next/image";
 
@@ -136,7 +136,7 @@ export const BentoGridItem = ({
         </div>
       )}
       {/* //spotify */}
-      {id === 5 && (
+      {/* {id === 5 && (
         <div className="relative">
           <iframe
             style={{ borderRadius: "12px" }}
@@ -149,7 +149,7 @@ export const BentoGridItem = ({
             loading="lazy"
           ></iframe>
         </div>
-      )}
+      )} */}
 
       {id === 6 && (
         // add background animation , remove the p tag
@@ -157,7 +157,7 @@ export const BentoGridItem = ({
           <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div>
         </BackgroundGradientAnimation>
       )}
-      {id === 6 && <GridItemLast />}
+      {/* {id === 6 && <GridItemLast />} */}
     </div>
   );
 };

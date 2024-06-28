@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import React from "react";
-import { motion } from "framer-motion";
+import { LazyMotion, domAnimation, m } from "framer-motion";
 
 export default function SocialContactCOntainer({
   children,
@@ -11,10 +11,12 @@ export default function SocialContactCOntainer({
   link: string;
 }) {
   return (
-    <motion.li initial={{ opacity: 0.6 }} whileHover={{ opacity: 1 }}>
-      <Link target="_blank" href={link}>
-        {children}
-      </Link>
-    </motion.li>
+    <LazyMotion features={domAnimation}>
+      <m.li initial={{ opacity: 0.6 }} whileHover={{ opacity: 1 }}>
+        <Link target="_blank" href={link}>
+          {children}
+        </Link>
+      </m.li>
+    </LazyMotion>
   );
 }

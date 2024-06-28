@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@lottiefiles/react-lottie-player": "^3.5.4",
+    "@next/bundle-analyzer": "^14.2.4",
     "@react-email/components": "^0.0.19",
     "@tsparticles/engine": "^3.4.0",
     "@tsparticles/react": "^3.0.0",

@@ -1,21 +1,18 @@
 "use client";
 import React from "react";
-import Lottie from "react-lottie";
+
 import animationData1 from "../lib/Lottie/modern.json";
+import dynamic from "next/dynamic";
+
+const ShowLottie = dynamic(() => import("./ui/ShowLottie"), {
+  ssr: false,
+});
 
 export default function GridItemThird() {
-  const defaultOptions1 = {
-    loop: true,
-    autoplay: true,
-    animationData: animationData1,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
   return (
     <div className="">
       <div className="top-12 -left-8 absolute">
-        <Lottie options={defaultOptions1} width={340} height={340} />
+        <ShowLottie path={animationData1} className="w-[340px] h-[340px]" />
       </div>
 
       <div className="absolute xl:bottom-4 bottom-[350px] md:bottom-16 md:-left-40 xl:left-0  p-10 left-0 w-full h-56 flex flex-col items-center gap-3  justify-center text-center">

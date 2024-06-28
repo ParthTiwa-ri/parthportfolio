@@ -1,10 +1,4 @@
 import React from "react";
-
-import { motion } from "framer-motion";
-
-import { TbBrandGithub } from "react-icons/tb";
-import { IoOpenOutline } from "react-icons/io5";
-import Link from "next/link";
 import Wrapper from "../Wrapper";
 import { projects } from "@/lib/data/MyProjects";
 import ProjectCards from "../ProjectCards";
