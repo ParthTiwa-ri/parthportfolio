@@ -21,7 +21,6 @@ export default function Home() {
       <Hero />
       <Gap />
       <div className="xl:max-w-[1200px] md:max-w-xl max-w-[350px] ">
-        <LampGlow />
         <AboutMe />
         <Skills />
         <Experience />
@@ -29,6 +28,7 @@ export default function Home() {
         <MyProjects />
         <Contact />
         <Footer />
+        <LampGlow />
       </div>
     </main>
   );
