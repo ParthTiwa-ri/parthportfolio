@@ -1,5 +1,10 @@
+"use client";
 import React from "react";
 import { SparklesCore } from "../ui/Sparkle";
+import MagicButton from "../ui/MagicButton";
+import { motion } from "framer-motion";
+import { FaLocationArrow } from "react-icons/fa6";
+import { slideUp } from "@/lib/animation";
 
 export default function Hero() {
   return (
@@ -51,13 +56,13 @@ export default function Hero() {
             >
               I build things for the web using Next.js, Prisma, and Node.js.
             </p>
-            {/* <motion.a href="#about" variants={slideUp({ delay: 0.7 })}>
+            <motion.a href="#about" variants={slideUp({ delay: 0.7 })}>
               <MagicButton
                 title="Show my work"
                 icon={<FaLocationArrow />}
                 position="right"
               />
-            </motion.a> */}
+            </motion.a>
           </div>
         </div>
       </div>
