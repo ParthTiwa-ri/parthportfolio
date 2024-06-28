@@ -57,13 +57,13 @@ export default function Hero() {
             >
               I build things for the web using Next.js, Prisma, and Node.js.
             </motion.p>
-            {/* <motion.a href="#about" variants={slideUp({ delay: 0.7 })}>
+            <motion.a href="#about" variants={slideUp({ delay: 0.7 })}>
               <MagicButton
                 title="Show my work"
                 icon={<FaLocationArrow />}
                 position="right"
               />
-            </motion.a> */}
+            </motion.a>
           </div>
         </motion.div>
       </div>
