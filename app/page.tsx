@@ -20,6 +20,8 @@ export default function Home() {
       <div className="galaxy-background" />
       <Hero />
       <Gap />
+
+      <LampGlow />
       <div className="xl:max-w-[1200px] md:max-w-xl max-w-[350px] ">
         <AboutMe />
         <Skills />
@@ -28,7 +30,6 @@ export default function Home() {
         <MyProjects />
         <Contact />
         <Footer />
-        <LampGlow />
       </div>
     </main>
   );
