@@ -36,6 +36,10 @@ const config = {
         "custom-gradient":
           "linear-gradient(180deg, #b89fff 0%, rgba(139, 100, 255, 1) 100%)",
       },
+      fontFamily: {
+        silka: ["var(--font-silka)"],
+        mongo: ["var(--font-mongo)"],
+      },
       colors: {
         onBg: "#37343E",
         bg: "#161618",

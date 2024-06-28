@@ -5,16 +5,15 @@ import { skills } from "@/lib/data/Skills";
 import Wrapper from "../Wrapper";
 
 import dynamic from "next/dynamic";
-// import ShowLottie from "../ui/ShowLottie";
 const ShowLottie = dynamic(() => import("../ui/ShowLottie"), {
   ssr: false,
 });
 
 export default function Skills() {
   return (
-    <Wrapper>
+    <Wrapper classnames="xl:mt-0 mt-28">
       <div className="w-full ">
-        <div className="w-full flex items-center   justify-center flex-col gap-y-8">
+        <div className="w-full flex items-center justify-center flex-col gap-y-8">
           <p className="h1"> {skills.heading}</p>
         </div>
         <div className="flex w-full mt-20 xl:flex-row flex-col  ">

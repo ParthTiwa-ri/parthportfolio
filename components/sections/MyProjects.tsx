@@ -7,7 +7,7 @@ export default function MyProjects() {
   return (
     <Wrapper>
       <div className="w-full">
-        <section className="xl:-mb-52 relative z-50 max-w-[970px] mx-auto ">
+        <section className=" relative z-50 max-w-[970px] mx-auto ">
           <p className="h1 pb-20">My Projects</p>
           <div className="grid xl:grid-cols-auto-300 grid-cols-auto-250   gap-y-6 gap-x-6 place-items-center ">
             {projects.map(({ id, title, skills, img, link, githubLink }) => (

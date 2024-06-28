@@ -98,8 +98,10 @@ export const BentoGridItem = ({
       )}
       {id === 2 && (
         <div className="space-y-8">
-          <div className="flex justify-between items-center">
-            <p className="xl:text-5xl text-4xl text-[#8366DA]">About Me</p>
+          <div className="flex xl:mt-0 mt-4 justify-between items-center">
+            <p className="xl:text-5xl font-mongo text-4xl text-[#8366DA]">
+              About Me
+            </p>
             <Image
               src={img}
               alt="icon"

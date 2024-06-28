@@ -12,7 +12,7 @@ export default function SubmitBtn() {
       disabled={pending}
     >
       {pending ? (
-        <div className="h-5 w-5 animate-spin rounded-full border-b-2 border-white"></div>
+        <div className="h-5 w-5 animate-spin rounded-full border-b-2 border-black"></div>
       ) : (
         <>
           Submit{" "}

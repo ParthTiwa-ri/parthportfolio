@@ -12,7 +12,7 @@ import Wrapper from "../Wrapper";
 
 export default function Experience() {
   return (
-    <Wrapper classnames="xl:my-20">
+    <Wrapper classnames="">
       <section id="experience" className="">
         <p className="h1 pb-20">My Experience</p>
         <VerticalTimeline lineColor="" animate={false}>

@@ -15,14 +15,5 @@ export default function Wrapper({
   children: React.ReactNode;
   classnames?: string;
 }) {
-  return (
-    <div
-      className={cn(
-        "md:min-h-[110vh] py-20 min-h-[130vh] flex items-center",
-        classnames
-      )}
-    >
-      {children}
-    </div>
-  );
+  return <div className={cn("xl:py-28 py-16 ", classnames)}>{children}</div>;
 }
