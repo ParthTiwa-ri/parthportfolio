@@ -1,40 +1,40 @@
-import animationData from "../lib/Lottie/confetti.json";
+import animationData from "../lib/Lottie/celebrate.json";
 
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import MagicButton from "./ui/MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
-import Lottie from "react-lottie";
-import ShowLottie from "./ui/ShowLottie";
+
+import { Player } from "@lottiefiles/react-lottie-player";
 
 export default function GridItemLast() {
   const [copied, setCopied] = useState(false);
+  const playerRef = useRef<Player>(null);
+
   const handleCopy = () => {
     const text = "parthtiwari421@gmail.com";
     navigator.clipboard.writeText(text);
     setCopied(true);
   };
-  const defaultOptions = {
-    loop: copied,
-    autoplay: copied,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
+
+  useEffect(() => {
+    if (copied && playerRef.current) {
+      playerRef.current.play();
+    }
+  }, [copied]);
+
   return (
     <div className="mr-1 md:mr-4 p-8 relative">
       <div
-        className={`absolute -bottom-5 pointer-events-none -right-10 md:right-10 ${
+        className={`absolute -bottom-28 pointer-events-none -right-10 md:right-10 ${
           copied ? "block" : "block"
         }`}
       >
-        {/* <img src="/confetti.gif" alt="confetti" /> */}
-        <Lottie options={defaultOptions} height={200} width={400} />
-        {/* <ShowLottie
-          path={animationData}
-          auto={copied}
-          className="w-[400px] h-[200px]"
-        /> */}
+        <Player
+          ref={playerRef}
+          autoplay={false}
+          className="w-[400px] h-[400px]"
+          src={animationData}
+        ></Player>
       </div>
       <div className="flex gap-8 md:gap-0  items items-center justify-center flex-col ">
         <p className="font-semibold pointer-events-none md:text-3xl text-xl  md:max-w-96 text-center">
