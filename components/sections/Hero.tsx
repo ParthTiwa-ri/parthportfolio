@@ -8,12 +8,9 @@ import { slideUp } from "@/lib/animation";
 
 export default function Hero() {
   return (
-    // <div className="bg-gradient-to-b from-[#000319] via-[#2C0368]  to-[#000319] min-h-screen relative -z-10   w-full">
-    //   <div className="xl:max-w-[1200px] md:max-w-xl mx-auto max-w-[350px] pt-36">
-    //     <div className="absolute inset-0">
-    <div>
-      <div>
-        <div>
+    <div className="bg-gradient-to-b from-[#000319] via-[#2C0368]  to-[#000319] min-h-screen relative -z-10   w-full">
+      <div className="xl:max-w-[1200px] md:max-w-xl mx-auto max-w-[350px] pt-36">
+        <div className="absolute inset-0">
           <SparklesCore
             speed={0.01}
             id="tsparticlesfullpage"
@@ -60,13 +57,13 @@ export default function Hero() {
             >
               I build things for the web using Next.js, Prisma, and Node.js.
             </motion.p>
-            <motion.a href="#about" variants={slideUp({ delay: 0.7 })}>
+            {/* <motion.a href="#about" variants={slideUp({ delay: 0.7 })}>
               <MagicButton
                 title="Show my work"
                 icon={<FaLocationArrow />}
                 position="right"
               />
-            </motion.a>
+            </motion.a> */}
           </div>
         </motion.div>
       </div>
