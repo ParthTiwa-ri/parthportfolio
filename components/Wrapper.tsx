@@ -11,9 +11,15 @@ import React from "react";
 export default function Wrapper({
   children,
   classnames,
+  id = "",
 }: {
   children: React.ReactNode;
   classnames?: string;
+  id?: string;
 }) {
-  return <div className={cn("xl:py-28 py-16 ", classnames)}>{children}</div>;
+  return (
+    <div id={id} className={cn("xl:py-28 py-16 ", classnames)}>
+      {children}
+    </div>
+  );
 }

@@ -8,6 +8,8 @@ import Experience from "@/components/sections/experience";
 import Gap from "@/components/Gap";
 import ProjectWorkedOn from "@/components/sections/ProjectsWorked";
 import Skills from "@/components/sections/Skills";
+import { FloatingNav } from "@/components/ui/FloatingNavbar";
+import { navItems } from "@/lib/data/navitems";
 
 export default function Home() {
   return (
@@ -15,6 +17,7 @@ export default function Home() {
       <div className="galaxy-background -z-10" />
       <Hero />
       <Gap />
+      <FloatingNav navItems={navItems} />
 
       <div className="xl:max-w-[1200px] md:max-w-xl max-w-[350px] ">
         <LampGlow />

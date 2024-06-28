@@ -11,7 +11,7 @@ const ShowLottie = dynamic(() => import("../ui/ShowLottie"), {
 
 export default function Skills() {
   return (
-    <Wrapper classnames="xl:mt-0 mt-28">
+    <Wrapper id="skills" classnames="xl:mt-0 mt-28 ">
       <div className="w-full ">
         <div className="w-full flex items-center justify-center flex-col gap-y-8">
           <p className="h1"> {skills.heading}</p>

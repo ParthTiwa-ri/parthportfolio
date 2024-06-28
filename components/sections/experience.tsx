@@ -13,7 +13,7 @@ import Wrapper from "../Wrapper";
 export default function Experience() {
   return (
     <Wrapper classnames="">
-      <section id="experience" className="">
+      <section id="experience" className="pt-4">
         <p className="h1 pb-20">My Experience</p>
         <VerticalTimeline lineColor="" animate={false}>
           {experiencesData.map((item, index) => (
