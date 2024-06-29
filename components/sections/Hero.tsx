@@ -22,9 +22,9 @@ export default function Hero() {
             speed={0.01}
             id="tsparticlesfullpage"
             background="transparent"
-            minSize={0.5}
-            maxSize={0.9}
-            particleDensity={30}
+            minSize={0.4}
+            maxSize={1}
+            particleDensity={25}
             className="w-full  h-full"
             particleColor="#FFFFFF"
           />
@@ -38,10 +38,19 @@ export default function Hero() {
               Dynamic Web Magic with Next.js
             </h2>
             <div>
-              <TextGenerateEffect
-                words="Hi! I'm Parth Tiwari, Full Stack Developer based in India."
-                className="text-center text-[40px] md:text-5xl lg:text-6xl"
-              />
+              <div
+                className={
+                  "font-bold text-center text-[40px] md:text-5xl lg:text-6xl "
+                }
+              >
+                <div className="my-4">
+                  <div className=" dark:text-white text-black  leading-snug tracking-wide">
+                    Hi! I &apos;m{" "}
+                    <span className="text-[#33B9FF]">Parth Tiwari</span>, Full
+                    Stack Developer based in India.
+                  </div>
+                </div>
+              </div>
             </div>
             <p className="text-center opacity-75 md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
               I build things for the web using Next.js, Prisma, and Node.js.
