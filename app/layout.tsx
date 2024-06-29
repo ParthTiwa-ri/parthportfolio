@@ -19,6 +19,37 @@ export const metadata: Metadata = {
   description: seoData.description,
   keywords: seoData.keywords.join(","),
   metadataBase: new URL(seoData.url),
+  icons: [
+    {
+      rel: "apple-touch-icon",
+      sizes: "120x120",
+      url: "/favicons/apple-icon.png",
+    },
+    {
+      rel: "icon",
+      type: "image/png",
+      sizes: "36x36",
+      url: "/favicons/android-icon-36x36.png",
+    },
+    {
+      rel: "icon",
+      type: "image/png",
+      sizes: "192x192",
+      url: "/favicons/android-icon-192x192.png",
+    },
+    {
+      rel: "icon",
+      type: "image/png",
+      sizes: "32x32",
+      url: "/favicons/favicon-32x32.png",
+    },
+    {
+      rel: "icon",
+      type: "image/png",
+      sizes: "16x16",
+      url: "/favicons/favicon-16x16.png",
+    },
+  ],
 };
 const mongo = localFont({
   src: "../public/fonts/MorangaBold.otf",
