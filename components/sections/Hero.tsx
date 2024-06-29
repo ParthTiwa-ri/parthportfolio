@@ -16,7 +16,8 @@ export default function Hero() {
     <div className="bg-gradient-to-b from-[#000319] via-[#2C0368]  to-[#000319] min-h-screen relative z-20   w-full">
       <div className="galaxy-background " />
 
-      <div className="xl:max-w-[1200px] md:max-w-xl mx-auto max-w-[350px] pt-36">
+      <div className="xl:max-w-[1200px] md:max-w-xl mx-auto max-w-[350px] pt-28 md:pt-36 ">
+        {/* pt-36 */}
         <div className="absolute inset-0">
           <SparklesCore
             speed={0.01}
