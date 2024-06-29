@@ -22,75 +22,36 @@ export const metadata: Metadata = {
   icons: [
     {
       rel: "apple-touch-icon",
-      sizes: "57x57",
-      url: "/fevicon/apple-icon-57x57.png",
-    },
-    {
-      rel: "apple-touch-icon",
-      sizes: "60x60",
-      url: "/fevicon/apple-icon-60x60.png",
-    },
-    {
-      rel: "apple-touch-icon",
-      sizes: "72x72",
-      url: "/fevicon/apple-icon-72x72.png",
-    },
-    {
-      rel: "apple-touch-icon",
-      sizes: "76x76",
-      url: "/fevicon/apple-icon-76x76.png",
-    },
-    {
-      rel: "apple-touch-icon",
-      sizes: "114x114",
-      url: "/fevicon/apple-icon-114x114.png",
-    },
-    {
-      rel: "apple-touch-icon",
       sizes: "120x120",
-      url: "/fevicon/apple-icon-120x120.png",
+      url: "/favicons/apple-icon.png",
     },
     {
-      rel: "apple-touch-icon",
-      sizes: "144x144",
-      url: "/fevicon/apple-icon-144x144.png",
-    },
-    {
-      rel: "apple-touch-icon",
-      sizes: "152x152",
-      url: "/fevicon/apple-icon-152x152.png",
-    },
-    {
-      rel: "apple-touch-icon",
-      sizes: "180x180",
-      url: "/fevicon/apple-icon-180x180.png",
+      rel: "icon",
+      type: "image/png",
+      sizes: "36x36",
+      url: "/favicons/android-icon-36x36.png",
     },
     {
       rel: "icon",
       type: "image/png",
       sizes: "192x192",
-      url: "/fevicon/android-icon-192x192.png",
+      url: "/favicons/android-icon-192x192.png",
     },
     {
       rel: "icon",
       type: "image/png",
       sizes: "32x32",
-      url: "/fevicon/favicon-32x32.png",
-    },
-    {
-      rel: "icon",
-      type: "image/png",
-      sizes: "96x96",
-      url: "/fevicon/favicon-96x96.png",
+      url: "/favicons/favicon-32x32.png",
     },
     {
       rel: "icon",
       type: "image/png",
       sizes: "16x16",
-      url: "/fevicon/favicon-16x16.png",
+      url: "/favicons/favicon-16x16.png",
     },
   ],
 };
+
 const mongo = localFont({
   src: "../public/fonts/MorangaBold.otf",
   variable: "--font-mongo",
