@@ -17,7 +17,7 @@ export default function Home() {
       <div className="galaxy-background -z-10" />
       <Hero />
       <Gap />
-      {/* <FloatingNav navItems={navItems} /> */}
+      <FloatingNav navItems={navItems} />
 
       <div className="xl:max-w-[1200px] md:max-w-xl max-w-[350px] ">
         <LampGlow />
