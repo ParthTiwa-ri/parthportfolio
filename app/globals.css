@@ -184,11 +184,6 @@ html {
   transform: translateY(50%);
 }
 
-.safari-z-fix {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
 .z-2 {
   z-index: 2;
 }
@@ -204,4 +199,18 @@ html {
 }
 .z-negative-2 {
   z-index: -2;
+}
+/* styles.css (or your preferred stylesheet) */
+@keyframes slideUpAnimation {
+  from {
+    transform: translateY(30px); /* Start from 20px below */
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0); /* Move to original position */
+    opacity: 1;
+  }
+}
+.animate-slide-up {
+  animation: slideUpAnimation 1.5s ease forwards; /* Adjust timing as per your requirement */
 }

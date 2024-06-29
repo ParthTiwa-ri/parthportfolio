@@ -1,12 +1,8 @@
-import { FaLocationArrow } from "react-icons/fa6";
 import MagicButton from "../ui/MagicButton";
 const SparklesCore = dynamic(() => import("../ui/Sparkle"), {
   ssr: false,
 });
-import { TextGenerateEffect } from "../ui/TextGenerateEffect";
-import { LazyMotion, domAnimation, m } from "framer-motion";
 
-import { slideUp } from "@/lib/animation";
 import dynamic from "next/dynamic";
 import { MdOutlineFileDownload } from "react-icons/md";
 
@@ -32,7 +28,7 @@ export default function Hero() {
 
         {/* content */}
 
-        <div className="flex justify-center relative my-20 z-10">
+        <div className="flex animate-slide-up justify-center relative my-20 z-10">
           <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
             <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
               Dynamic Web Magic with Next.js
