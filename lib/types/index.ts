@@ -4,7 +4,7 @@ export type TechStackItem = {
   id: number;
   title: string;
   link: string;
-  icon: React.ReactElement;
+  icon: string;
 };
 
 export type TechStackDetailType = TechStackItem[];
