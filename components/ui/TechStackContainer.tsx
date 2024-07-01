@@ -1,6 +1,7 @@
 "use client";
 import { LazyMotion, domAnimation, m } from "framer-motion";
 import React from "react";
+import { Icon } from "@iconify/react";
 
 export default function TechStackContainer({
   children,
@@ -14,7 +15,10 @@ export default function TechStackContainer({
         transition={{ duration: 1 }}
         className="tile-icon"
       >
-        {children}
+        <Icon
+          icon={children as string}
+          className="w-[40px] h-[40px] md:w-[48px] md:h-[48px]"
+        />
       </m.div>
     </LazyMotion>
   );

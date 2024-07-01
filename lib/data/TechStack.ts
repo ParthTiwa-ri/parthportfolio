@@ -1,126 +1,84 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 
-export const TechStackDetail = [
+interface TechStackItem {
+  id: number;
+  title: string;
+  link: string;
+  icon: string;
+}
+
+export const TechStackDetail: TechStackItem[] = [
   {
     id: 1,
     title: "NextJs",
     link: "",
-    icon: React.createElement(Icon, {
-      icon: "devicon:nextjs",
-      width: 50,
-      height: 50,
-    }),
+    icon: "devicon:nextjs",
   },
   {
     id: 2,
     title: "React",
     link: "",
-    icon: React.createElement(Icon, {
-      icon: "vscode-icons:file-type-reactjs",
-      width: 50,
-      height: 50,
-    }),
+    icon: "vscode-icons:file-type-reactjs",
   },
   {
     id: 3,
     title: "Javascript",
     link: "",
-    icon: React.createElement(Icon, {
-      icon: "vscode-icons:file-type-js-official",
-      width: 50,
-      height: 50,
-    }),
+    icon: "vscode-icons:file-type-js-official",
   },
   {
     id: 4,
     title: "Typescript",
     link: "",
-    icon: React.createElement(Icon, {
-      icon: "skill-icons:typescript",
-
-      width: 50,
-      height: 50,
-    }),
+    icon: "skill-icons:typescript",
   },
   {
     id: 5,
     title: "TailwindCSS",
     link: "",
-    icon: React.createElement(Icon, {
-      icon: "vscode-icons:file-type-tailwind",
-      width: 50,
-      height: 50,
-    }),
+    icon: "vscode-icons:file-type-tailwind",
   },
   {
     id: 6,
     title: "NodeJs",
     link: "",
-    icon: React.createElement(Icon, {
-      icon: "vscode-icons:file-type-node",
-      width: 50,
-      height: 50,
-    }),
+    icon: "vscode-icons:file-type-node",
   },
   {
     id: 7,
     title: "ExpressJs",
     link: "",
-    icon: React.createElement(Icon, {
-      icon: "simple-icons:express",
-      width: 50,
-      height: 50,
-    }),
+    icon: "simple-icons:express",
   },
   {
     id: 8,
     title: "MongoDB",
     link: "",
-    icon: React.createElement(Icon, {
-      icon: "vscode-icons:file-type-mongo",
-      width: 50,
-      height: 50,
-    }),
+    icon: "vscode-icons:file-type-mongo",
   },
   {
     id: 9,
     title: "PostgreSQL",
     link: "",
-    icon: React.createElement(Icon, {
-      icon: "logos:postgresql",
-      width: 50,
-      height: 50,
-    }),
+    icon: "logos:postgresql",
   },
   {
     id: 10,
     title: "Prisma",
     link: "",
-    icon: React.createElement(Icon, {
-      icon: "vscode-icons:file-type-prisma",
-      width: 50,
-      height: 50,
-    }),
+    icon: "vscode-icons:file-type-prisma",
   },
   {
     id: 11,
     title: "Redux",
     link: "",
-    icon: React.createElement(Icon, {
-      icon: "devicon:redux",
-      width: 50,
-      height: 50,
-    }),
+    icon: "devicon:redux",
   },
   {
     id: 12,
     title: "C++",
     link: "",
-    icon: React.createElement(Icon, {
-      icon: "vscode-icons:file-type-cpp3",
-      width: 50,
-      height: 50,
-    }),
+    icon: "vscode-icons:file-type-cpp3",
   },
 ];
