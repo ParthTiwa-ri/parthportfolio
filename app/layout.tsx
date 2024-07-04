@@ -6,6 +6,7 @@ import Cursor from "@/components/Cursor";
 import { Toaster } from "react-hot-toast";
 import localFont from "next/font/local";
 import { seoData } from "@/lib/data/SeoData";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -80,6 +81,7 @@ export default function RootLayout({
         >
           {children}
           <Toaster position="top-right" />
+          <Analytics />
 
           {/* <Cursor className="hidden xl:block" /> */}
         </ThemeProvider>
