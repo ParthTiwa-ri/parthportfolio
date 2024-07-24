@@ -82,8 +82,6 @@ export default function RootLayout({
           {children}
           <Toaster position="top-right" />
           <Analytics />
-
-          {/* <Cursor className="hidden xl:block" /> */}
         </ThemeProvider>
       </body>
     </html>
