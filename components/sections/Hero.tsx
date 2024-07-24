@@ -1,3 +1,4 @@
+import { resumeLink } from "@/lib/data/Resume";
 import MagicButton from "../ui/MagicButton";
 const SparklesCore = dynamic(() => import("../ui/Sparkle"), {
   ssr: false,
@@ -52,7 +53,7 @@ export default function Hero() {
               I build things for the web using Next.js, Prisma, and Node.js.
             </p>
             <a
-              href="https://drive.google.com/file/d/1KBoqDvIEprN9WlP1pJcd_DHXBCoLSiVS/view?usp=sharing"
+              href={resumeLink}
               target="_blank"
               className="z-30  cursor-pointer"
             >
