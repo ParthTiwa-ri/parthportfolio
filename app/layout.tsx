@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import Cursor from "@/components/Cursor";
+
 import { Toaster } from "react-hot-toast";
 import localFont from "next/font/local";
 import { seoData } from "@/lib/data/SeoData";
