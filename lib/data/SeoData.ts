@@ -16,5 +16,8 @@ export const seoData = {
     "Parth Tiwari Portfolio",
     "Parth Tiwari Resume",
     "Parth Tiwari Projects",
+    "Parth Tiwari Software Developer",
+    "Software Engineer",
+    "Parth Tiwari Software Engineer",
   ],
 };
